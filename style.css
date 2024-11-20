@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Optional, for better visibility */
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ensures the calculator takes up available space */
+    max-width: 400px; /* Set a max width for better control */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.screen {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #e0f7fa; /* Pale Blue */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    line-height: 40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+    width: 100%; /* Ensures buttons take full width */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Distribute buttons evenly */
+    gap: 10px; /* Space between buttons */
+    width: 100%; /* Row takes full width */
+}
+
+.btn {
+    flex: 1; /* Make buttons fill available space in the row */
+    height: 60px; /* Adjust the height as needed */
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.operator {
+    background-color: #FF6347;
+}
+
+.btn:active {
+    background-color: #0056b3;
+}
+
+.btn.operator:active {
+    background-color: #cc5145;
+}
